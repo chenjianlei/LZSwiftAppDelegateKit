@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A50E6F8F240CEEDD00F9B206 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F8E240CEEDD00F9B206 /* main.swift */; };
+		A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F90240CF12500F9B206 /* ModuleA.swift */; };
+		A5F0AD91240D0FB400F11393 /* NSObject+TestLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */; };
+		A5F0AD94240D126300F11393 /* TestLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0AD93240D126300F11393 /* TestLoad.m */; };
 		EFAB973CFF2AD2328C9F70E5 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */; };
 		F91514B885E05E380D62FEC5 /* Pods_LZSwiftAppDelegateKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */; };
 /* End PBXBuildFile section */
@@ -28,11 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43F91BBF310A62C9652EFBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4B3CF8E1F97276C0E862405C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		43F91BBF310A62C9652EFBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4B3CF8E1F97276C0E862405C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LZSwiftAppDelegateKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZSwiftAppDelegateKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -42,11 +44,18 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A50E6F8E240CEEDD00F9B206 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A50E6F90240CF12500F9B206 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
+		A5F0AD83240D089F00F11393 /* LZSwiftAppDelegateKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5F0AD8F240D0FB400F11393 /* NSObject+TestLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestLoad.h"; sourceTree = "<group>"; };
+		A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestLoad.m"; sourceTree = "<group>"; };
+		A5F0AD92240D126300F11393 /* TestLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLoad.h; sourceTree = "<group>"; };
+		A5F0AD93240D126300F11393 /* TestLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLoad.m; sourceTree = "<group>"; };
 		BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD32D95999E2A042266EBBB /* Pods-LZSwiftAppDelegateKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		EF7DD60F9FB32F23BCE6B8BD /* LZSwiftAppDelegateKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LZSwiftAppDelegateKit.podspec; path = ../LZSwiftAppDelegateKit.podspec; sourceTree = "<group>"; };
+		EF7DD60F9FB32F23BCE6B8BD /* LZSwiftAppDelegateKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZSwiftAppDelegateKit.podspec; path = ../LZSwiftAppDelegateKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +102,18 @@
 		607FACD21AFB9204008FA782 /* Example for LZSwiftAppDelegateKit */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				A50E6F8E240CEEDD00F9B206 /* main.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				A50E6F90240CF12500F9B206 /* ModuleA.swift */,
+				A5F0AD8F240D0FB400F11393 /* NSObject+TestLoad.h */,
+				A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */,
+				A5F0AD92240D126300F11393 /* TestLoad.h */,
+				A5F0AD93240D126300F11393 /* TestLoad.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				A5F0AD83240D089F00F11393 /* LZSwiftAppDelegateKit_Example-Bridging-Header.h */,
 			);
 			name = "Example for LZSwiftAppDelegateKit";
 			path = LZSwiftAppDelegateKit;
@@ -147,7 +162,6 @@
 				BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */,
 				BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,7 +227,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1130;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +241,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -270,10 +285,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LZSwiftAppDelegateKit/LZSwiftAppDelegateKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyLoad/SwiftyLoad.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LZSwiftAppDelegateKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyLoad.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,7 +349,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				A5F0AD91240D0FB400F11393 /* NSObject+TestLoad.m in Sources */,
+				A5F0AD94240D126300F11393 /* TestLoad.m in Sources */,
+				A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */,
+				A50E6F8F240CEEDD00F9B206 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +498,15 @@
 			baseConfigurationReference = 88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,11 +517,14 @@
 			baseConfigurationReference = ECD32D95999E2A042266EBBB /* Pods-LZSwiftAppDelegateKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

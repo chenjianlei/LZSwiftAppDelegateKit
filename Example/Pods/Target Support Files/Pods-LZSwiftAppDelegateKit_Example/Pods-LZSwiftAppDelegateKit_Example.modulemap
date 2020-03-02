@@ -1,0 +1,6 @@
+framework module Pods_LZSwiftAppDelegateKit_Example {
+  umbrella header "Pods-LZSwiftAppDelegateKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

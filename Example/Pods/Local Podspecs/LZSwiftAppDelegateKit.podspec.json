@@ -1,0 +1,26 @@
+{
+  "name": "LZSwiftAppDelegateKit",
+  "version": "0.0.1",
+  "summary": "A short description of LZSwiftAppDelegateKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chenjianlei/LZSwiftAppDelegateKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chenjianlei": "woshixiaolei@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/chenjianlei/LZSwiftAppDelegateKit.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LZSwiftAppDelegateKit/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "UserNotifications"
+  ]
+}

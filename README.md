@@ -20,6 +20,10 @@ it, simply add the following line to your Podfile:
 pod 'LZSwiftAppDelegateKit'
 ```
 
+```
+_ = UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc)), NSStringFromClass(UIApplication.self), NSStringFromClass(LZAppDelegate.self))
+```
+
 ## Author
 
 chenjianlei, woshixiaolei@qq.com

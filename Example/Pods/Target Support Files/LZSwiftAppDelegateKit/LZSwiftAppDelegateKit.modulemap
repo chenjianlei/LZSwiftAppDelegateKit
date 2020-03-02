@@ -1,0 +1,6 @@
+framework module LZSwiftAppDelegateKit {
+  umbrella header "LZSwiftAppDelegateKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
