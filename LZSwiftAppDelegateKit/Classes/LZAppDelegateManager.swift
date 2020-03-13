@@ -9,27 +9,16 @@ import Foundation
 
 public class LZAppDelegateManager: NSObject {
     
-    public static let share = LZAppDelegateManager()
+    @objc public static let share = LZAppDelegateManager()
     
     var modules = [LZAppManagerProtocol]()
     
     public var window: UIWindow?
     
-    
-    @objc public func rootViewController(_ application: UIApplication) -> UIViewController? {
-        let module = modules.first { (m) -> Bool in
-            if m.responds(to: #selector(rootViewController(_:))) {
-                return true
-            } else {
-                return false
-            }
-        }
-        
-        if let m = module {
-            return m.rootViewController(application)
-        } else {
-            return nil
-        }
+    /// must first step
+    /// - Parameter modules: LZAppManagerProtocol
+    public func config(_ ms: [LZAppManagerProtocol]) {
+        modules += ms
     }
     
     public func registModule(_ module: LZAppManagerProtocol) {
@@ -58,7 +47,6 @@ public class LZAppDelegateManager: NSObject {
 extension LZAppDelegateManager: UIApplicationDelegate {
     
     public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("aaa")
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:willFinishLaunchingWithOptions:))) {
                _ = m.application?(application, willFinishLaunchingWithOptions: launchOptions)
@@ -76,6 +64,30 @@ extension LZAppDelegateManager: UIApplicationDelegate {
         return true
     }
     
+    public func applicationWillResignActive(_ application: UIApplication) {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(applicationWillResignActive(_:))) {
+                m.applicationWillResignActive?(application)
+            }
+        }
+    }
+
+    public func applicationDidEnterBackground(_ application: UIApplication) {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(applicationDidEnterBackground(_:))) {
+                m.applicationDidEnterBackground?(application)
+            }
+        }
+    }
+
+    public func applicationWillEnterForeground(_ application: UIApplication) {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(applicationWillEnterForeground(_:))) {
+                m.applicationWillEnterForeground?(application)
+            }
+        }
+    }
+
     public func applicationDidBecomeActive(_ application: UIApplication) {
         modules.forEach { (m) in
             if m.responds(to: #selector(applicationDidBecomeActive(_:))) {
@@ -83,4 +95,13 @@ extension LZAppDelegateManager: UIApplicationDelegate {
             }
         }
     }
+
+    public func applicationWillTerminate(_ application: UIApplication) {
+        modules.forEach { (m) in
+               if m.responds(to: #selector(applicationWillTerminate(_:))) {
+                   m.applicationWillTerminate?(application)
+               }
+           }
+    }
 }
+

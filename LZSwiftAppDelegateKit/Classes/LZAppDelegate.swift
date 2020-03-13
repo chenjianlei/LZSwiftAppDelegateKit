@@ -7,33 +7,45 @@
 
 import UIKit
 
-public class LZAppDelegate: UIResponder, UIApplicationDelegate {
+open class LZAppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
-    
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         _ = LZAppDelegateManager.share.application(application, willFinishLaunchingWithOptions: launchOptions)
         return true
     }
     
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.backgroundColor = .white
-        window?.makeKeyAndVisible()
-        
-        if let root = LZAppDelegateManager.share.rootViewController(application) {
-            window?.rootViewController = root
-        } else {
-            assert(false, "❎ window must need root viewController ! ❎\n")
-        }
-        
-        LZAppDelegateManager.share.window = window
-        
+    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         _ = LZAppDelegateManager.share.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
-    
+}
+
+extension LZAppDelegate {
+    public func applicationWillResignActive(_ application: UIApplication) {
+        LZAppDelegateManager.share.applicationWillResignActive(application)
+    }
+
+    public func applicationDidEnterBackground(_ application: UIApplication) {
+        LZAppDelegateManager.share.applicationDidEnterBackground(application)
+    }
+
+    public func applicationWillEnterForeground(_ application: UIApplication) {
+        LZAppDelegateManager.share.applicationWillEnterForeground(application)
+    }
+
     public func applicationDidBecomeActive(_ application: UIApplication) {
         LZAppDelegateManager.share.applicationDidBecomeActive(application)
     }
+
+    public func applicationWillTerminate(_ application: UIApplication) {
+        LZAppDelegateManager.share.applicationWillTerminate(application)
+    }
+}
+
+extension LZAppDelegate {
+    
+}
+
+extension LZAppDelegate {
+    
 }

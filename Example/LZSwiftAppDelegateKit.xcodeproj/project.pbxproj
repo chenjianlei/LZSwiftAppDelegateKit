@@ -12,10 +12,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A50E6F8F240CEEDD00F9B206 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F8E240CEEDD00F9B206 /* main.swift */; };
 		A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F90240CF12500F9B206 /* ModuleA.swift */; };
-		A5F0AD91240D0FB400F11393 /* NSObject+TestLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */; };
-		A5F0AD94240D126300F11393 /* TestLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F0AD93240D126300F11393 /* TestLoad.m */; };
+		A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED226241B701C007A3F55 /* AppDelegate.swift */; };
+		A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED228241B7ECD007A3F55 /* ModuleB.swift */; };
+		A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */; };
+		A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */; };
 		EFAB973CFF2AD2328C9F70E5 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */; };
 		F91514B885E05E380D62FEC5 /* Pods_LZSwiftAppDelegateKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */; };
 /* End PBXBuildFile section */
@@ -44,13 +45,12 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A50E6F8E240CEEDD00F9B206 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A50E6F90240CF12500F9B206 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
+		A5EED226241B701C007A3F55 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5EED228241B7ECD007A3F55 /* ModuleB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleB.swift; sourceTree = "<group>"; };
+		A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
+		A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A5F0AD83240D089F00F11393 /* LZSwiftAppDelegateKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		A5F0AD8F240D0FB400F11393 /* NSObject+TestLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestLoad.h"; sourceTree = "<group>"; };
-		A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestLoad.m"; sourceTree = "<group>"; };
-		A5F0AD92240D126300F11393 /* TestLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLoad.h; sourceTree = "<group>"; };
-		A5F0AD93240D126300F11393 /* TestLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLoad.m; sourceTree = "<group>"; };
 		BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,13 +102,12 @@
 		607FACD21AFB9204008FA782 /* Example for LZSwiftAppDelegateKit */ = {
 			isa = PBXGroup;
 			children = (
-				A50E6F8E240CEEDD00F9B206 /* main.swift */,
+				A5EED226241B701C007A3F55 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				A50E6F90240CF12500F9B206 /* ModuleA.swift */,
-				A5F0AD8F240D0FB400F11393 /* NSObject+TestLoad.h */,
-				A5F0AD90240D0FB400F11393 /* NSObject+TestLoad.m */,
-				A5F0AD92240D126300F11393 /* TestLoad.h */,
-				A5F0AD93240D126300F11393 /* TestLoad.m */,
+				A5EED228241B7ECD007A3F55 /* ModuleB.swift */,
+				A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */,
+				A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,10 +226,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 896FUHKD4V;
 						LastSwiftMigration = 1130;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 896FUHKD4V;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -285,12 +286,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LZSwiftAppDelegateKit/LZSwiftAppDelegateKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyLoad/SwiftyLoad.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LZSwiftAppDelegateKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyLoad.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -348,11 +347,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */,
+				A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */,
+				A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				A5F0AD91240D0FB400F11393 /* NSObject+TestLoad.m in Sources */,
-				A5F0AD94240D126300F11393 /* TestLoad.m in Sources */,
+				A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */,
 				A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */,
-				A50E6F8F240CEEDD00F9B206 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,10 +499,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 896FUHKD4V;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "moon.com.LZSwiftAppDelegateKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
@@ -518,10 +520,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 896FUHKD4V;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "moon.com.LZSwiftAppDelegateKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
@@ -534,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 896FUHKD4V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -556,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 896FUHKD4V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

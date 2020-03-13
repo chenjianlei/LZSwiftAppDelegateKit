@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "NSObject+load.h"
 
 FOUNDATION_EXPORT double LZSwiftAppDelegateKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LZSwiftAppDelegateKitVersionString[];

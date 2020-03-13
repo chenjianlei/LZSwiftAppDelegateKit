@@ -1,14 +1,8 @@
 PODS:
   - LZSwiftAppDelegateKit (0.0.1)
-  - SwiftyLoad (0.1.0)
 
 DEPENDENCIES:
   - LZSwiftAppDelegateKit (from `../`)
-  - SwiftyLoad
-
-SPEC REPOS:
-  trunk:
-    - SwiftyLoad
 
 EXTERNAL SOURCES:
   LZSwiftAppDelegateKit:
@@ -16,8 +10,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   LZSwiftAppDelegateKit: 47eb64129331aa7ad95fae579c95407aa51bc191
-  SwiftyLoad: 8e529992e2ce9b84d56f583201117a55a526891b
 
-PODFILE CHECKSUM: b76b1a7830afda6caf18f6474f91c05b0e32908e
+PODFILE CHECKSUM: 97b5322861cc2d6001fa4827b11c064b506efe25
 
 COCOAPODS: 1.8.4
