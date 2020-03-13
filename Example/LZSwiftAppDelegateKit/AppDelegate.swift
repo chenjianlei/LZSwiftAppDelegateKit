@@ -18,6 +18,7 @@ class AppDelegate: LZAppDelegate {
         LZAppDelegateManager.share.config([
                  ModuleA(),
                  ModuleB(),
+                 ModuleC(),
         ])
         return super.application(application, willFinishLaunchingWithOptions: launchOptions)
     }
@@ -26,8 +27,7 @@ class AppDelegate: LZAppDelegate {
         window? = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-        window?.rootViewController = TestAViewController()
-        LZAppDelegateManager.share.window = window
+        window?.rootViewController = TabBarViewController()
         return super.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
 }

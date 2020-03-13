@@ -13,8 +13,6 @@ public class LZAppDelegateManager: NSObject {
     
     var modules = [LZAppManagerProtocol]()
     
-    public var window: UIWindow?
-    
     /// must first step
     /// - Parameter modules: LZAppManagerProtocol
     public func config(_ ms: [LZAppManagerProtocol]) {
@@ -43,9 +41,7 @@ public class LZAppDelegateManager: NSObject {
     }
 }
 
-
 extension LZAppDelegateManager: UIApplicationDelegate {
-    
     public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:willFinishLaunchingWithOptions:))) {
@@ -63,6 +59,9 @@ extension LZAppDelegateManager: UIApplicationDelegate {
         }
         return true
     }
+}
+
+extension LZAppDelegateManager {
     
     public func applicationWillResignActive(_ application: UIApplication) {
         modules.forEach { (m) in
@@ -105,3 +104,27 @@ extension LZAppDelegateManager: UIApplicationDelegate {
     }
 }
 
+extension LZAppDelegateManager {
+    public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(application(_:open:sourceApplication:annotation:))) {
+               _ = m.application?(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+            }
+        }
+        return true
+    }
+    
+    public func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        return true
+    }
+}
+
+extension LZAppDelegateManager: UNUserNotificationCenterDelegate {
+    public func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(application(_:didRegister:))) {
+                m.application?(application, didRegister: notificationSettings)
+            }
+        }
+    }
+}
