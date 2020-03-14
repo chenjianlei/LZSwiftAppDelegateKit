@@ -9,27 +9,35 @@
 import Foundation
 import LZSwiftAppDelegateKit
 
+let testA_method1 = "testA_method1"
+let testA_method2 = "testA_method2"
+
 class ModuleA: NSObject, LZAppManagerProtocol {
+    var delayedActions: [String]? {
+        [
+            testA_method1,
+            testA_method2
+        ]
+    }
     
-    var first: Bool = false
-    var index: Int = 0
+    func delayedExecution(_ action: String) {
+        if action == testA_method1 {
+            print("test A method1")
+        } else if action == testA_method2 {
+            print("test A method2")
+        }
+    }
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("module a will")
         return true
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("module a did")
         return true
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("module A applicationDidEnterBackground")
-        if !first {
-            first = true
-            LZAppDelegateManager.share.unRegistModule(self)
-        }
+
     }
 }
 

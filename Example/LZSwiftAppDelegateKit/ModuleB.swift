@@ -10,18 +10,19 @@ import UIKit
 import LZSwiftAppDelegateKit
 
 class ModuleB: NSObject, LZAppManagerProtocol {
+    var delayedActions: [String]? { nil }
+    
+    func delayedExecution(_ action: String) { }
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("module b will")
         return true
     }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("module b did")
         return true
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("module B applicationDidEnterBackground")
+        
     }
 }

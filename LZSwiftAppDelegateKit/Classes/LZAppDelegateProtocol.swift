@@ -11,6 +11,11 @@ import UIKit
 
 public protocol LZAppActionDelegate {
     
+    var delayedActions: [String]? { get }
+    
+    /// 延迟执行
+    /// - Parameter name: key
+    func delayedExecution(_ action: String)
 }
  
 public protocol LZAppManagerProtocol: UIApplicationDelegate, UNUserNotificationCenterDelegate, LZAppActionDelegate {

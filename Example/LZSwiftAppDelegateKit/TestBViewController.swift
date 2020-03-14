@@ -1,22 +1,23 @@
 //
-//  TabBarViewController.swift
+//  TestBViewController.swift
 //  LZSwiftAppDelegateKit_Example
 //
-//  Created by Sun Moon on 2020/3/13.
+//  Created by Sun Moon on 2020/3/14.
 //  Copyright © 2020 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class TestBViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let a = UINavigationController.init(rootViewController: TestAViewController())
-        let b = UINavigationController.init(rootViewController: TestBViewController())
-        viewControllers = [a, b]
+
+        // Do any additional setup after loading the view.
     }
     
+
+
     /*
     // MARK: - Navigation
 

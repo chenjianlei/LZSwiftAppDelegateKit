@@ -13,6 +13,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F90240CF12500F9B206 /* ModuleA.swift */; };
+		A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC6241CF716001A7129 /* TestBViewController.swift */; };
+		A57D4CC9241D05FF001A7129 /* TestCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC8241D05FF001A7129 /* TestCViewController.swift */; };
 		A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED226241B701C007A3F55 /* AppDelegate.swift */; };
 		A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED228241B7ECD007A3F55 /* ModuleB.swift */; };
 		A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */; };
@@ -47,6 +49,8 @@
 		7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A50E6F90240CF12500F9B206 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
+		A57D4CC6241CF716001A7129 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
+		A57D4CC8241D05FF001A7129 /* TestCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCViewController.swift; sourceTree = "<group>"; };
 		A5EED226241B701C007A3F55 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5EED228241B7ECD007A3F55 /* ModuleB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleB.swift; sourceTree = "<group>"; };
 		A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				A5EED228241B7ECD007A3F55 /* ModuleB.swift */,
 				A5EED232241B9C36007A3F55 /* ModuleC.swift */,
 				A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */,
+				A57D4CC6241CF716001A7129 /* TestBViewController.swift */,
+				A57D4CC8241D05FF001A7129 /* TestCViewController.swift */,
 				A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -350,11 +356,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57D4CC9241D05FF001A7129 /* TestCViewController.swift in Sources */,
 				A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */,
 				A5EED233241B9C36007A3F55 /* ModuleC.swift in Sources */,
 				A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */,
 				A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */,
 				A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */,
 				A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */,
 			);

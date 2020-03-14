@@ -15,7 +15,7 @@ class AppDelegate: LZAppDelegate {
     var window: UIWindow?
     
     override func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        LZAppDelegateManager.share.config([
+        LZAppDelegateManager.share.regist([
                  ModuleA(),
                  ModuleB(),
                  ModuleC(),
