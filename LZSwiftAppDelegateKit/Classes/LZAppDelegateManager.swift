@@ -57,7 +57,7 @@ public class LZAppDelegateManager: NSObject {
 // 入口
 extension LZAppDelegateManager: UIApplicationDelegate {
     
-    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:willFinishLaunchingWithOptions:))) {
                _ = m.application?(application, willFinishLaunchingWithOptions: launchOptions)
@@ -66,7 +66,7 @@ extension LZAppDelegateManager: UIApplicationDelegate {
         return true
     }
     
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:didFinishLaunchingWithOptions:))) {
                 _ = m.application?(application, didFinishLaunchingWithOptions: launchOptions)

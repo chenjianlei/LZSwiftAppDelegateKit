@@ -14,12 +14,12 @@ open class LZAppDelegate: UIResponder, UIApplicationDelegate {
 // 入口
 extension LZAppDelegate {
     
-    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         _ = LZAppDelegateManager.share.application(application, willFinishLaunchingWithOptions: launchOptions)
         return true
     }
     
-    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         _ = LZAppDelegateManager.share.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }

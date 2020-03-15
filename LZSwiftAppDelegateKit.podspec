@@ -14,6 +14,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/chenjianlei/LZSwiftAppDelegateKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
+  
+  s.swift_version = "4.2"
   s.swift_versions = ['4.0', '4.2', '5.0']
 
   s.source_files = 'LZSwiftAppDelegateKit/Classes/**/*'
