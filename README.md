@@ -7,21 +7,34 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-LZSwiftAppDelegateKit is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'LZSwiftAppDelegateKit'
 ```
+import UIKit
+import LZSwiftAppDelegateKit
 
-```
-_ = UIApplicationMain(CommandLine.argc, UnsafeMutableRawPointer(CommandLine.unsafeArgv).bindMemory(to: UnsafeMutablePointer<Int8>.self, capacity: Int(CommandLine.argc)), NSStringFromClass(UIApplication.self), NSStringFromClass(LZAppDelegate.self))
+@UIApplicationMain
+class AppDelegate: LZAppDelegate {
+    
+    var window: UIWindow?
+    
+    override func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        LZAppDelegateManager.share.regist([
+            ModuleA(),
+            ModuleB(),
+            ModuleC(),
+        ])
+        return super.application(application, willFinishLaunchingWithOptions: launchOptions)
+    }
+    
+    override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        window? = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+        window?.rootViewController = TabBarViewController()
+        return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    }
+}
+
+
 ```
 
 ## Author
