@@ -9,10 +9,7 @@
 import UIKit
 import LZSwiftAppDelegateKit
 
-class ModuleB: NSObject, LZAppManagerProtocol {
-    var delayedActions: [String]? { nil }
-    
-    func delayedExecution(_ action: String) { }
+class ModuleB: LZBaseModule {
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         return true

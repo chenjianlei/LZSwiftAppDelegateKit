@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		226D3F2439E85481F9DBD6412F8698CF /* LZSwiftAppDelegateKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DE9160FDFFE86080BF642D4F76D4B57C /* LZSwiftAppDelegateKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35B43E64F7C9F8058D3391BA78CC9FF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA25020B96B86E3A3E00AD9B070823 /* UIKit.framework */; };
+		1C1D9311DE171760502ACA3D9610BBEC /* LZBaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A143D0D7B05E6B3ECC8E1CE521BEF /* LZBaseModule.swift */; };
+		27D88889D03C78D9295DAE7994446F11 /* LZAppDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4A84CAD81D195FDDFACAFC5042A664 /* LZAppDelegateManager.swift */; };
 		3BF816AE306CC0C0080D3218C5A6A403 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB9A57B4342D5D960CCD724525D2E0E /* Foundation.framework */; };
-		3E7A542F78A088E728761F2139D49E2E /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3545D27B29558DC85E442A57FECBE4 /* UserNotifications.framework */; };
+		4550513F9C6D2A71A82E1D6B0F86D58D /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3545D27B29558DC85E442A57FECBE4 /* UserNotifications.framework */; };
+		66BF65CC4969A66CDAF8B3D5045421A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB9A57B4342D5D960CCD724525D2E0E /* Foundation.framework */; };
+		6F6DC12AA0892F2D3835150D56865128 /* LZSwiftAppDelegateKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C92C8BA7C29C90A26B7631C088F15991 /* LZSwiftAppDelegateKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		747FB892D5BFF6B99BC18CDC1EDBC23B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB9A57B4342D5D960CCD724525D2E0E /* Foundation.framework */; };
-		7C5DC072786D0E5888E90EA646067656 /* LZAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D26BD10AD1DC1950B5411980C766298 /* LZAppDelegate.swift */; };
-		7F05FC267CB3DCA08F46B5AA52EF8211 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB9A57B4342D5D960CCD724525D2E0E /* Foundation.framework */; };
-		A755B01550D3EDB3D098F4A783D46F22 /* LZSwiftAppDelegateKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE89128B30B928C5499268D860A4AF7B /* LZSwiftAppDelegateKit-dummy.m */; };
+		7687ED63BDA5D07A641F840F151776B5 /* LZAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4BD8EB219D68112BC29E84E63FADA /* LZAppDelegate.swift */; };
+		7D6B39041DD243F3B7317FB95F43F223 /* LZSwiftAppDelegateKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 405D3999E1198A2EA6761A20BB4C9143 /* LZSwiftAppDelegateKit-dummy.m */; };
+		7E615F1F2FAEB0B278FB2B57EED53D2E /* LZAppDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B9CED38D41A276628B366BC327F09 /* LZAppDelegateProtocol.swift */; };
+		B6C9D50121ACA0A56BEE05D6AC78C272 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA25020B96B86E3A3E00AD9B070823 /* UIKit.framework */; };
 		BF608261F7DDEF728E56953A20869B8D /* Pods-LZSwiftAppDelegateKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC29A95804DFB1458455241EA2FA13A9 /* Pods-LZSwiftAppDelegateKit_Example-dummy.m */; };
-		C4B5240C3758639C51003960326FB07A /* LZAppDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B687DC570B337FD1773A5AAF7481FA72 /* LZAppDelegateProtocol.swift */; };
-		CE96893A9EB769BCE9780082CC139705 /* LZAppDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8225553B5D5934757C739057300A04FB /* LZAppDelegateManager.swift */; };
 		D18B2A8FF5B4B56190DCDA590025650F /* Pods-LZSwiftAppDelegateKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F73BDEDC7DAA4C10D0DB5D8A38B4D63 /* Pods-LZSwiftAppDelegateKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E078E33C619D7EAFAD497A9399869BFA /* Pods-LZSwiftAppDelegateKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2813767A9A61EE7C629EDCE68B855DF3 /* Pods-LZSwiftAppDelegateKit_Tests-dummy.m */; };
 		F0FCD624C5111C823999920DFEE4A70A /* Pods-LZSwiftAppDelegateKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2EA28FD2F7CAC2BDE788DEACE8A71E /* Pods-LZSwiftAppDelegateKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,38 +42,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D861B0084F637413B1846980E6BF3B /* LZSwiftAppDelegateKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LZSwiftAppDelegateKit.xcconfig; sourceTree = "<group>"; };
 		08FA25020B96B86E3A3E00AD9B070823 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0ADDAAB6183AB52EAD15F464D133793F /* LZSwiftAppDelegateKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit-prefix.pch"; sourceTree = "<group>"; };
 		0B27CD467022F462ACA6C492C78B4E0A /* Pods-LZSwiftAppDelegateKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LZSwiftAppDelegateKit_Example.modulemap"; sourceTree = "<group>"; };
 		0F73BDEDC7DAA4C10D0DB5D8A38B4D63 /* Pods-LZSwiftAppDelegateKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LZSwiftAppDelegateKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1BF43472C738CA2DE4CC4E1868E9B000 /* Pods-LZSwiftAppDelegateKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LZSwiftAppDelegateKit_Example-Info.plist"; sourceTree = "<group>"; };
-		27FA6A147A3BEE8AD2BD772610984097 /* LZSwiftAppDelegateKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LZSwiftAppDelegateKit.xcconfig; sourceTree = "<group>"; };
+		207F3252995E7AACBDF0202C4BC57A0B /* LZSwiftAppDelegateKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LZSwiftAppDelegateKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2813767A9A61EE7C629EDCE68B855DF3 /* Pods-LZSwiftAppDelegateKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LZSwiftAppDelegateKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		36E1D35761C47331CD005D0A9AC3A8DE /* LZSwiftAppDelegateKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LZSwiftAppDelegateKit.modulemap; sourceTree = "<group>"; };
 		386F09DE486DFF8EEB954A2D7DDDD64F /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3A018F0D4291B57C1A5C69DC98EA20D7 /* Pods-LZSwiftAppDelegateKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LZSwiftAppDelegateKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3AB9A57B4342D5D960CCD724525D2E0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3D26BD10AD1DC1950B5411980C766298 /* LZAppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegate.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegate.swift; sourceTree = "<group>"; };
 		3D53E3896EF9DF6FAC076BE1FA9AD3E9 /* Pods-LZSwiftAppDelegateKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LZSwiftAppDelegateKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3E031A73C331FFF35556DABF53DAE34F /* Pods-LZSwiftAppDelegateKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LZSwiftAppDelegateKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		405D3999E1198A2EA6761A20BB4C9143 /* LZSwiftAppDelegateKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LZSwiftAppDelegateKit-dummy.m"; sourceTree = "<group>"; };
 		406A7D7F106339824BDE63501220003B /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		44E1722D5C2CA2C74755514A2167B33F /* Pods-LZSwiftAppDelegateKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LZSwiftAppDelegateKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		467A143D0D7B05E6B3ECC8E1CE521BEF /* LZBaseModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZBaseModule.swift; path = LZSwiftAppDelegateKit/Classes/LZBaseModule.swift; sourceTree = "<group>"; };
 		4C3545D27B29558DC85E442A57FECBE4 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
-		7274B0CA2E149B08B2E27AC04CCD8B60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		790D8933B993F94AE7F38A1A8E41E443 /* LZSwiftAppDelegateKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LZSwiftAppDelegateKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F2B9CED38D41A276628B366BC327F09 /* LZAppDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegateProtocol.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegateProtocol.swift; sourceTree = "<group>"; };
+		505CC8925B3762C8444EA0803D4D0F6A /* LZSwiftAppDelegateKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit-prefix.pch"; sourceTree = "<group>"; };
+		5F30A953B0D60BA31A10241087C75C96 /* LZSwiftAppDelegateKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LZSwiftAppDelegateKit-Info.plist"; sourceTree = "<group>"; };
+		7C4A84CAD81D195FDDFACAFC5042A664 /* LZAppDelegateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegateManager.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegateManager.swift; sourceTree = "<group>"; };
 		7E2EA28FD2F7CAC2BDE788DEACE8A71E /* Pods-LZSwiftAppDelegateKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LZSwiftAppDelegateKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		81755E4507640488757B4AD9ACCEA8A2 /* LZSwiftAppDelegateKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LZSwiftAppDelegateKit-Info.plist"; sourceTree = "<group>"; };
-		8225553B5D5934757C739057300A04FB /* LZAppDelegateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegateManager.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegateManager.swift; sourceTree = "<group>"; };
+		7EB833EC0B799026CFD5494D5348AF96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A031984A1023664FDE3E1DE6F2F0825D /* Pods-LZSwiftAppDelegateKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LZSwiftAppDelegateKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A689389C02E7E8BA1901F46BDAD95692 /* Pods-LZSwiftAppDelegateKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LZSwiftAppDelegateKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B687DC570B337FD1773A5AAF7481FA72 /* LZAppDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegateProtocol.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegateProtocol.swift; sourceTree = "<group>"; };
+		BBA0DF7A10C1838E8081933BA0362BE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		BC29A95804DFB1458455241EA2FA13A9 /* Pods-LZSwiftAppDelegateKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LZSwiftAppDelegateKit_Example-dummy.m"; sourceTree = "<group>"; };
+		BED4BD8EB219D68112BC29E84E63FADA /* LZAppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LZAppDelegate.swift; path = LZSwiftAppDelegateKit/Classes/LZAppDelegate.swift; sourceTree = "<group>"; };
 		C49A904C5536DDBC24E1112FD9DAD0E9 /* Pods-LZSwiftAppDelegateKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LZSwiftAppDelegateKit_Tests.modulemap"; sourceTree = "<group>"; };
 		C5C0720545B9A6AE3EF963D84CD527EA /* LZSwiftAppDelegateKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LZSwiftAppDelegateKit.framework; path = LZSwiftAppDelegateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE89128B30B928C5499268D860A4AF7B /* LZSwiftAppDelegateKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LZSwiftAppDelegateKit-dummy.m"; sourceTree = "<group>"; };
-		CF10177429A8A80CC61B3E430D7D7668 /* LZSwiftAppDelegateKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LZSwiftAppDelegateKit.modulemap; sourceTree = "<group>"; };
-		D320FCB2F7616DE61719C0BE7FE26F8A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		DE9160FDFFE86080BF642D4F76D4B57C /* LZSwiftAppDelegateKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit-umbrella.h"; sourceTree = "<group>"; };
+		C92C8BA7C29C90A26B7631C088F15991 /* LZSwiftAppDelegateKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit-umbrella.h"; sourceTree = "<group>"; };
 		E33CF0FAC91974153A7E3620A5F51F98 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LZSwiftAppDelegateKit_Example.framework; path = "Pods-LZSwiftAppDelegateKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7024AA44923B1FF7B35998921F81C9 /* Pods_LZSwiftAppDelegateKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LZSwiftAppDelegateKit_Tests.framework; path = "Pods-LZSwiftAppDelegateKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7697FAAC285136B6316724CD74B3959 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,13 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B5204C178B367FCEC6CF263058D8AC2 /* Frameworks */ = {
+		5CB44BE2C5411B71526CC1DE4A8FF8EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F05FC267CB3DCA08F46B5AA52EF8211 /* Foundation.framework in Frameworks */,
-				35B43E64F7C9F8058D3391BA78CC9FF5 /* UIKit.framework in Frameworks */,
-				3E7A542F78A088E728761F2139D49E2E /* UserNotifications.framework in Frameworks */,
+				66BF65CC4969A66CDAF8B3D5045421A6 /* Foundation.framework in Frameworks */,
+				B6C9D50121ACA0A56BEE05D6AC78C272 /* UIKit.framework in Frameworks */,
+				4550513F9C6D2A71A82E1D6B0F86D58D /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0EFA59BD09AD3991CC2E34F20AF8E582 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7EB833EC0B799026CFD5494D5348AF96 /* LICENSE */,
+				207F3252995E7AACBDF0202C4BC57A0B /* LZSwiftAppDelegateKit.podspec */,
+				BBA0DF7A10C1838E8081933BA0362BE7 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		29CD2AF5B6C2ACBAE034574BDE55A39E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,14 +139,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		75E67326ABF92067139BEE5F1D20A9DA /* Pod */ = {
+		3C26D7774449447AD27796458D924A82 /* LZSwiftAppDelegateKit */ = {
 			isa = PBXGroup;
 			children = (
-				7274B0CA2E149B08B2E27AC04CCD8B60 /* LICENSE */,
-				790D8933B993F94AE7F38A1A8E41E443 /* LZSwiftAppDelegateKit.podspec */,
-				D320FCB2F7616DE61719C0BE7FE26F8A /* README.md */,
+				BED4BD8EB219D68112BC29E84E63FADA /* LZAppDelegate.swift */,
+				7C4A84CAD81D195FDDFACAFC5042A664 /* LZAppDelegateManager.swift */,
+				4F2B9CED38D41A276628B366BC327F09 /* LZAppDelegateProtocol.swift */,
+				467A143D0D7B05E6B3ECC8E1CE521BEF /* LZBaseModule.swift */,
+				0EFA59BD09AD3991CC2E34F20AF8E582 /* Pod */,
+				3EB3B22357FDF58CFAA3914F6FA63507 /* Support Files */,
 			);
-			name = Pod;
+			name = LZSwiftAppDelegateKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3EB3B22357FDF58CFAA3914F6FA63507 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36E1D35761C47331CD005D0A9AC3A8DE /* LZSwiftAppDelegateKit.modulemap */,
+				06D861B0084F637413B1846980E6BF3B /* LZSwiftAppDelegateKit.xcconfig */,
+				405D3999E1198A2EA6761A20BB4C9143 /* LZSwiftAppDelegateKit-dummy.m */,
+				5F30A953B0D60BA31A10241087C75C96 /* LZSwiftAppDelegateKit-Info.plist */,
+				505CC8925B3762C8444EA0803D4D0F6A /* LZSwiftAppDelegateKit-prefix.pch */,
+				C92C8BA7C29C90A26B7631C088F15991 /* LZSwiftAppDelegateKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LZSwiftAppDelegateKit";
+			sourceTree = "<group>";
+		};
+		6D9BE26CB66B7B2E19D7E477CCDDE0B2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C26D7774449447AD27796458D924A82 /* LZSwiftAppDelegateKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7CA3A35B36A1AD81488D22C45EEA4F08 /* Pods-LZSwiftAppDelegateKit_Tests */ = {
@@ -170,32 +208,11 @@
 			path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example";
 			sourceTree = "<group>";
 		};
-		ABD2A9E99C2D3D78F19E343FB15DAF54 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C1B356F143FE0F76805D6A97AC693CB1 /* LZSwiftAppDelegateKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C1B356F143FE0F76805D6A97AC693CB1 /* LZSwiftAppDelegateKit */ = {
-			isa = PBXGroup;
-			children = (
-				3D26BD10AD1DC1950B5411980C766298 /* LZAppDelegate.swift */,
-				8225553B5D5934757C739057300A04FB /* LZAppDelegateManager.swift */,
-				B687DC570B337FD1773A5AAF7481FA72 /* LZAppDelegateProtocol.swift */,
-				75E67326ABF92067139BEE5F1D20A9DA /* Pod */,
-				F3B42052E38055788C97AA2563568A8B /* Support Files */,
-			);
-			name = LZSwiftAppDelegateKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				ABD2A9E99C2D3D78F19E343FB15DAF54 /* Development Pods */,
+				6D9BE26CB66B7B2E19D7E477CCDDE0B2 /* Development Pods */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				D6A3A0FC1CA9BC021F06B6655E6D0767 /* Products */,
 				EE703B12BAB2FE5B0BCA0F2445A087D1 /* Targets Support Files */,
@@ -221,20 +238,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F3B42052E38055788C97AA2563568A8B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF10177429A8A80CC61B3E430D7D7668 /* LZSwiftAppDelegateKit.modulemap */,
-				27FA6A147A3BEE8AD2BD772610984097 /* LZSwiftAppDelegateKit.xcconfig */,
-				CE89128B30B928C5499268D860A4AF7B /* LZSwiftAppDelegateKit-dummy.m */,
-				81755E4507640488757B4AD9ACCEA8A2 /* LZSwiftAppDelegateKit-Info.plist */,
-				0ADDAAB6183AB52EAD15F464D133793F /* LZSwiftAppDelegateKit-prefix.pch */,
-				DE9160FDFFE86080BF642D4F76D4B57C /* LZSwiftAppDelegateKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LZSwiftAppDelegateKit";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -246,11 +249,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE505F20863EB69B4FB00DCF2C529C2 /* Headers */ = {
+		C109E51DD7C32B613CA3ECDED480889A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226D3F2439E85481F9DBD6412F8698CF /* LZSwiftAppDelegateKit-umbrella.h in Headers */,
+				6F6DC12AA0892F2D3835150D56865128 /* LZSwiftAppDelegateKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,12 +308,12 @@
 		};
 		BB195B846821CD7CBE88673ADBDE0560 /* LZSwiftAppDelegateKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F134DE55CBF07715A4FCFCD9961EBB24 /* Build configuration list for PBXNativeTarget "LZSwiftAppDelegateKit" */;
+			buildConfigurationList = 78DC6312B9D07BB5336FD97B08A6A41E /* Build configuration list for PBXNativeTarget "LZSwiftAppDelegateKit" */;
 			buildPhases = (
-				5DE505F20863EB69B4FB00DCF2C529C2 /* Headers */,
-				C86059E026362E75D576F7505098FB32 /* Sources */,
-				1B5204C178B367FCEC6CF263058D8AC2 /* Frameworks */,
-				3A1DB3AAD00757E3595D460767207DB2 /* Resources */,
+				C109E51DD7C32B613CA3ECDED480889A /* Headers */,
+				55367A7C1F9C808F59263DF96E418E87 /* Sources */,
+				5CB44BE2C5411B71526CC1DE4A8FF8EE /* Frameworks */,
+				2C3C893C677C1EF868C6C5C90705CDE9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -351,7 +354,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A1DB3AAD00757E3595D460767207DB2 /* Resources */ = {
+		2C3C893C677C1EF868C6C5C90705CDE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,14 +394,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C86059E026362E75D576F7505098FB32 /* Sources */ = {
+		55367A7C1F9C808F59263DF96E418E87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5DC072786D0E5888E90EA646067656 /* LZAppDelegate.swift in Sources */,
-				CE96893A9EB769BCE9780082CC139705 /* LZAppDelegateManager.swift in Sources */,
-				C4B5240C3758639C51003960326FB07A /* LZAppDelegateProtocol.swift in Sources */,
-				A755B01550D3EDB3D098F4A783D46F22 /* LZSwiftAppDelegateKit-dummy.m in Sources */,
+				7687ED63BDA5D07A641F840F151776B5 /* LZAppDelegate.swift in Sources */,
+				27D88889D03C78D9295DAE7994446F11 /* LZAppDelegateManager.swift in Sources */,
+				7E615F1F2FAEB0B278FB2B57EED53D2E /* LZAppDelegateProtocol.swift in Sources */,
+				1C1D9311DE171760502ACA3D9610BBEC /* LZBaseModule.swift in Sources */,
+				7D6B39041DD243F3B7317FB95F43F223 /* LZSwiftAppDelegateKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,9 +488,9 @@
 			};
 			name = Debug;
 		};
-		1A2B8403F8B10053D36013DFB4E62225 /* Release */ = {
+		38076BCA3E6563DBC7870C2C64C93D7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27FA6A147A3BEE8AD2BD772610984097 /* LZSwiftAppDelegateKit.xcconfig */;
+			baseConfigurationReference = 06D861B0084F637413B1846980E6BF3B /* LZSwiftAppDelegateKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -510,11 +514,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		401F2FDF4F6F9ACF3F2E249359BE4BB7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -551,9 +554,9 @@
 			};
 			name = Release;
 		};
-		574C0C51E08255C53DAD98EB97808FEA /* Debug */ = {
+		61345080FD05130652ADB3088B8D39FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27FA6A147A3BEE8AD2BD772610984097 /* LZSwiftAppDelegateKit.xcconfig */;
+			baseConfigurationReference = 06D861B0084F637413B1846980E6BF3B /* LZSwiftAppDelegateKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -577,10 +580,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		82CBDF61598FE68191FB9051A590485B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -766,20 +770,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		78DC6312B9D07BB5336FD97B08A6A41E /* Build configuration list for PBXNativeTarget "LZSwiftAppDelegateKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38076BCA3E6563DBC7870C2C64C93D7E /* Debug */,
+				61345080FD05130652ADB3088B8D39FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E05230FF46A0861ED7DEC26A98991FBB /* Build configuration list for PBXNativeTarget "Pods-LZSwiftAppDelegateKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82CBDF61598FE68191FB9051A590485B /* Debug */,
 				DD8EFEA9DBFF88C44282DFE4F72E84DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F134DE55CBF07715A4FCFCD9961EBB24 /* Build configuration list for PBXNativeTarget "LZSwiftAppDelegateKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				574C0C51E08255C53DAD98EB97808FEA /* Debug */,
-				1A2B8403F8B10053D36013DFB4E62225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

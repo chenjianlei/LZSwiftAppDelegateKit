@@ -10,7 +10,7 @@ import Foundation
 public class LZAppDelegateManager: NSObject {
     
     public static let share = LZAppDelegateManager()
-    
+
     var modules = [LZAppManagerProtocol]()
     
     /// 是否是首次进入程序， 默认为false，主要针对一些延迟执行的方法
@@ -45,9 +45,10 @@ public class LZAppDelegateManager: NSObject {
         if !firstAction {
             firstAction = true
             modules.forEach { (m) in
-                m.delayedActions?.forEach({ (action) in
-                    m.delayedExecution(action)
-                })
+                if m.conforms(to: LZAppActionDelegate.self) {
+                    let mm: LZAppActionDelegate = m as! LZAppActionDelegate
+                    mm.delayAction()
+                }
             }
         }
     }
