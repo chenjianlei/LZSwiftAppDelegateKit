@@ -163,7 +163,6 @@ extension LZAppDelegateManager {
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:didReceive:))) {
                 m.application?(application, didReceive: notification)
-                
             }
         }
     }
@@ -176,6 +175,16 @@ extension LZAppDelegateManager {
         modules.forEach { (m) in
             if m.responds(to: #selector(application(_:open:sourceApplication:annotation:))) {
                _ = m.application?(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+            }
+        }
+        return true
+    }
+    
+    @available(iOS 9.0, *)
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        modules.forEach { (m) in
+            if m.responds(to: #selector(application(_:open:options:))) {
+                _ = m.application?(app, open: url, options: options)
             }
         }
         return true

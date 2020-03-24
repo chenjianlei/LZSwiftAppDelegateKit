@@ -21,6 +21,6 @@ class ModuleC: LZBaseModule {
 
 extension ModuleC: LZAppActionDelegate {
     func delayAction() {
-        print("module C delay")
+        
     }
 }

@@ -11,7 +11,6 @@ import LZSwiftAppDelegateKit
 
 class ModuleA: LZBaseModule {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        print("module A didFinishLaunchingWithOptions")
         return true
     }
 }
@@ -19,7 +18,7 @@ class ModuleA: LZBaseModule {
 extension ModuleA: LZAppActionDelegate {
     
     func delayAction() {
-        print("module A delay")
+
     }
 }
 

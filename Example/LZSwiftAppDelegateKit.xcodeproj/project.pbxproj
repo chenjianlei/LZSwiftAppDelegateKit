@@ -13,6 +13,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F90240CF12500F9B206 /* ModuleA.swift */; };
+		A52ECC4D2429F78700E249ED /* ModuleD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC4C2429F78700E249ED /* ModuleD.swift */; };
+		A52ECC4F2429F82D00E249ED /* TestDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC4E2429F82D00E249ED /* TestDViewController.swift */; };
+		A52ECC512429F88E00E249ED /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC502429F88E00E249ED /* WebViewController.swift */; };
 		A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC6241CF716001A7129 /* TestBViewController.swift */; };
 		A57D4CC9241D05FF001A7129 /* TestCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC8241D05FF001A7129 /* TestCViewController.swift */; };
 		A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED226241B701C007A3F55 /* AppDelegate.swift */; };
@@ -20,7 +23,7 @@
 		A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */; };
 		A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */; };
 		A5EED233241B9C36007A3F55 /* ModuleC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED232241B9C36007A3F55 /* ModuleC.swift */; };
-		EFAB973CFF2AD2328C9F70E5 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */; };
+		EB2CE6E662321114EC8B9D08 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B381E0E661E3324AF1401FF5 /* Pods_LZSwiftAppDelegateKit_Tests.framework */; };
 		F91514B885E05E380D62FEC5 /* Pods_LZSwiftAppDelegateKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,7 @@
 /* Begin PBXFileReference section */
 		43F91BBF310A62C9652EFBA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4B3CF8E1F97276C0E862405C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		51B40C58188198763BC80557 /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* LZSwiftAppDelegateKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZSwiftAppDelegateKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,8 +51,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FAEE1892486940297DF125 /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A50E6F90240CF12500F9B206 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
+		A52ECC4C2429F78700E249ED /* ModuleD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleD.swift; sourceTree = "<group>"; };
+		A52ECC4E2429F82D00E249ED /* TestDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDViewController.swift; sourceTree = "<group>"; };
+		A52ECC502429F88E00E249ED /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A57D4CC6241CF716001A7129 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
 		A57D4CC8241D05FF001A7129 /* TestCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCViewController.swift; sourceTree = "<group>"; };
 		A5EED226241B701C007A3F55 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +65,7 @@
 		A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A5EED232241B9C36007A3F55 /* ModuleC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleC.swift; sourceTree = "<group>"; };
 		A5F0AD83240D089F00F11393 /* LZSwiftAppDelegateKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LZSwiftAppDelegateKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
-		BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B381E0E661E3324AF1401FF5 /* Pods_LZSwiftAppDelegateKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD32D95999E2A042266EBBB /* Pods-LZSwiftAppDelegateKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EF7DD60F9FB32F23BCE6B8BD /* LZSwiftAppDelegateKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LZSwiftAppDelegateKit.podspec; path = ../LZSwiftAppDelegateKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
@@ -77,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFAB973CFF2AD2328C9F70E5 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */,
+				EB2CE6E662321114EC8B9D08 /* Pods_LZSwiftAppDelegateKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +123,7 @@
 				A57D4CC6241CF716001A7129 /* TestBViewController.swift */,
 				A57D4CC8241D05FF001A7129 /* TestCViewController.swift */,
 				A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */,
+				A52ECC4B2429F76100E249ED /* Router */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -167,17 +174,27 @@
 			children = (
 				88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */,
 				ECD32D95999E2A042266EBBB /* Pods-LZSwiftAppDelegateKit_Example.release.xcconfig */,
-				BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */,
-				BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */,
+				86FAEE1892486940297DF125 /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */,
+				51B40C58188198763BC80557 /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A52ECC4B2429F76100E249ED /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A52ECC4C2429F78700E249ED /* ModuleD.swift */,
+				A52ECC4E2429F82D00E249ED /* TestDViewController.swift */,
+				A52ECC502429F88E00E249ED /* WebViewController.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		EFF258FAF2C20B0FF852172B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */,
-				D4A0F722EE9ACD5A4CBB6674 /* Pods_LZSwiftAppDelegateKit_Tests.framework */,
+				B381E0E661E3324AF1401FF5 /* Pods_LZSwiftAppDelegateKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,7 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "LZSwiftAppDelegateKit_Tests" */;
 			buildPhases = (
-				EC55439F20D6E890E6B98BA5 /* [CP] Check Pods Manifest.lock */,
+				A0C9D5710CC72668801EB975 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -287,6 +304,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A0C9D5710CC72668801EB975 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZSwiftAppDelegateKit_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B26EE4966F2792E1D8A093BD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,10 +334,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LZSwiftAppDelegateKit/LZSwiftAppDelegateKit.framework",
+				"${BUILT_PRODUCTS_DIR}/LZSwiftDelegate/LZSwiftDelegate.framework",
+				"${BUILT_PRODUCTS_DIR}/URLNavigator/URLNavigator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LZSwiftAppDelegateKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LZSwiftDelegate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URLNavigator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,28 +370,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC55439F20D6E890E6B98BA5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LZSwiftAppDelegateKit_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -362,7 +383,10 @@
 				A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */,
 				A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				A52ECC4D2429F78700E249ED /* ModuleD.swift in Sources */,
+				A52ECC512429F88E00E249ED /* WebViewController.swift in Sources */,
 				A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */,
+				A52ECC4F2429F82D00E249ED /* TestDViewController.swift in Sources */,
 				A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */,
 				A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */,
 			);
@@ -548,7 +572,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BEF6D2934C4F180C03355E2F /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 86FAEE1892486940297DF125 /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 896FUHKD4V;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -571,7 +595,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAD11F869A7181DD7785A7AE /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 51B40C58188198763BC80557 /* Pods-LZSwiftAppDelegateKit_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 896FUHKD4V;
 				FRAMEWORK_SEARCH_PATHS = (

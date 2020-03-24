@@ -1,16 +1,27 @@
 PODS:
   - LZSwiftAppDelegateKit (0.0.1)
+  - LZSwiftDelegate (0.0.2)
+  - URLNavigator (2.3.0)
 
 DEPENDENCIES:
   - LZSwiftAppDelegateKit (from `../`)
+  - LZSwiftDelegate (= 0.0.2)
+  - URLNavigator (= 2.3.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LZSwiftDelegate
+    - URLNavigator
 
 EXTERNAL SOURCES:
   LZSwiftAppDelegateKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LZSwiftAppDelegateKit: 4eb556bb1fa39d2d3a77fd34e50eff060014b41b
+  LZSwiftAppDelegateKit: 5564d2f1ce3b9012de9a2041f3e2a4c8923bd2a5
+  LZSwiftDelegate: e786f6a9c88a0598c0a7dce680f89aaf099e3ae1
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
 
-PODFILE CHECKSUM: 97b5322861cc2d6001fa4827b11c064b506efe25
+PODFILE CHECKSUM: a77eb1304a995dff751ff86e62169022a80e1129
 
 COCOAPODS: 1.8.4

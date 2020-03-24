@@ -79,6 +79,12 @@ extension LZAppDelegate {
 // 路由
 extension LZAppDelegate {
     
+    /// scheme
+    /// - Parameters:
+    ///   - application: application
+    ///   - url: zzscs://sss.com?xx=123
+    ///   - sourceApplication: ??
+    ///   - annotation: ??
     public func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return LZAppDelegateManager.share.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
     }
@@ -86,4 +92,10 @@ extension LZAppDelegate {
     public func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
         return LZAppDelegateManager.share.application(application, handleOpen: url)
     }
+    
+    @available(iOS 9.0, *)
+    public func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return LZAppDelegateManager.share.application(app, open: url, options: options)
+    }
+    
 }
