@@ -18,7 +18,9 @@ class TestAViewController: UIViewController {
         demo2,
         demo3,
         demo4,
-        demo5
+        demo5,
+        demo6,
+        demo7
     ]
     
     var handle: ((String, String) -> Void)?
@@ -29,6 +31,22 @@ class TestAViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(self.tableView)
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: rightItem)
+    }
+    
+    lazy var rightItem: UIButton = {
+        let b = UIButton.init(type: UIButtonType.custom)
+        b.setTitle("no login", for: .normal)
+        b.setTitle("login", for: .selected)
+        b.setTitleColor(.blue, for: .normal)
+        b.setTitleColor(.blue, for: .disabled)
+        b.addTarget(self, action: #selector(exChange), for: .touchUpInside)
+        return b
+    }()
+    
+    @objc func exChange() {
+        rightItem.isSelected = !rightItem.isSelected
+        isLogin = !isLogin
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,19 +79,34 @@ extension TestAViewController: UITableViewDataSource {
 
 extension TestAViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let url = arrays[indexPath.row]
-//        navigator.present(url)
-//        if indexPath.row == 1 {
-//            navigator.present(url)
-//        }
-        if navigator.push(url) != nil {
-           print("ok")
-        } else {
+        if indexPath.row == 0 {
+            navigator.push(url)
+        } else if indexPath.row == 1 {
+            navigator.present(url)
+        } else if indexPath.row == 2 {
+            navigator.open(url)
+        } else if indexPath.row == 3 {
             handle = { (key, value) in
-                print("key  -- \(key)")
-                print("value -- \(value)")
+                 print("key  -- \(key)")
+                 print("value -- \(value)")
+             }
+            navigator.open(url, context: handle)
+        } else if indexPath.row == 4 {
+            navigator.open(url, context: delegate)
+            delegate.delegate(on: self) { (_, input) -> String in
+                print("aaaa");
+                if input {
+                    return "true"
+                } else {
+                    return "false"
+                }
             }
-           navigator.open(url, context: "asd")
+        } else if indexPath.row == 5 {
+            navigator.push(url)
+        } else if indexPath.row == 6 {
+            navigator.present(url)
         }
     }
 }

@@ -12,6 +12,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A50C86CE242CAD2300DC1AC2 /* PresentModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50C86CD242CAD2300DC1AC2 /* PresentModelViewController.swift */; };
 		A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E6F90240CF12500F9B206 /* ModuleA.swift */; };
 		A52ECC4D2429F78700E249ED /* ModuleD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC4C2429F78700E249ED /* ModuleD.swift */; };
 		A52ECC4F2429F82D00E249ED /* TestDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC4E2429F82D00E249ED /* TestDViewController.swift */; };
@@ -53,6 +54,7 @@
 		7D333C35A88D0CAB6C462612 /* Pods_LZSwiftAppDelegateKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LZSwiftAppDelegateKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FAEE1892486940297DF125 /* Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Tests/Pods-LZSwiftAppDelegateKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		88831B80672131BB885F65F9 /* Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LZSwiftAppDelegateKit_Example/Pods-LZSwiftAppDelegateKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A50C86CD242CAD2300DC1AC2 /* PresentModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentModelViewController.swift; sourceTree = "<group>"; };
 		A50E6F90240CF12500F9B206 /* ModuleA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleA.swift; sourceTree = "<group>"; };
 		A52ECC4C2429F78700E249ED /* ModuleD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleD.swift; sourceTree = "<group>"; };
 		A52ECC4E2429F82D00E249ED /* TestDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				A52ECC4C2429F78700E249ED /* ModuleD.swift */,
 				A52ECC4E2429F82D00E249ED /* TestDViewController.swift */,
 				A52ECC502429F88E00E249ED /* WebViewController.swift */,
+				A50C86CD242CAD2300DC1AC2 /* PresentModelViewController.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -252,7 +255,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 896FUHKD4V;
+						DevelopmentTeam = P499A35898;
 						LastSwiftMigration = 1130;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -386,6 +389,7 @@
 				A52ECC4D2429F78700E249ED /* ModuleD.swift in Sources */,
 				A52ECC512429F88E00E249ED /* WebViewController.swift in Sources */,
 				A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */,
+				A50C86CE242CAD2300DC1AC2 /* PresentModelViewController.swift in Sources */,
 				A52ECC4F2429F82D00E249ED /* TestDViewController.swift in Sources */,
 				A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */,
 				A50E6F91240CF12500F9B206 /* ModuleA.swift in Sources */,
@@ -535,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 896FUHKD4V;
+				DEVELOPMENT_TEAM = P499A35898;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -556,7 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 896FUHKD4V;
+				DEVELOPMENT_TEAM = P499A35898;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
