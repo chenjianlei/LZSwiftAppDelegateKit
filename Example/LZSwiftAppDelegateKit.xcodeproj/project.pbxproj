@@ -19,6 +19,8 @@
 		A52ECC512429F88E00E249ED /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52ECC502429F88E00E249ED /* WebViewController.swift */; };
 		A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC6241CF716001A7129 /* TestBViewController.swift */; };
 		A57D4CC9241D05FF001A7129 /* TestCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D4CC8241D05FF001A7129 /* TestCViewController.swift */; };
+		A5E8FC1D243068BE00AF18B7 /* ModuleE.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8FC1C243068BE00AF18B7 /* ModuleE.swift */; };
+		A5E8FC52243088F500AF18B7 /* TestEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8FC51243088F500AF18B7 /* TestEViewController.swift */; };
 		A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED226241B701C007A3F55 /* AppDelegate.swift */; };
 		A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED228241B7ECD007A3F55 /* ModuleB.swift */; };
 		A5EED22F241B8C5A007A3F55 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */; };
@@ -59,8 +61,11 @@
 		A52ECC4C2429F78700E249ED /* ModuleD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleD.swift; sourceTree = "<group>"; };
 		A52ECC4E2429F82D00E249ED /* TestDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDViewController.swift; sourceTree = "<group>"; };
 		A52ECC502429F88E00E249ED /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A5491466242DA0D100CBA39F /* LZSwiftAppDelegateKit_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LZSwiftAppDelegateKit_Example.entitlements; sourceTree = "<group>"; };
 		A57D4CC6241CF716001A7129 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
 		A57D4CC8241D05FF001A7129 /* TestCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCViewController.swift; sourceTree = "<group>"; };
+		A5E8FC1C243068BE00AF18B7 /* ModuleE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleE.swift; sourceTree = "<group>"; };
+		A5E8FC51243088F500AF18B7 /* TestEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEViewController.swift; sourceTree = "<group>"; };
 		A5EED226241B701C007A3F55 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5EED228241B7ECD007A3F55 /* ModuleB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleB.swift; sourceTree = "<group>"; };
 		A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				A5491466242DA0D100CBA39F /* LZSwiftAppDelegateKit_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for LZSwiftAppDelegateKit */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -121,10 +127,12 @@
 				A50E6F90240CF12500F9B206 /* ModuleA.swift */,
 				A5EED228241B7ECD007A3F55 /* ModuleB.swift */,
 				A5EED232241B9C36007A3F55 /* ModuleC.swift */,
+				A5E8FC1C243068BE00AF18B7 /* ModuleE.swift */,
 				A5EED22E241B8C5A007A3F55 /* TestAViewController.swift */,
 				A57D4CC6241CF716001A7129 /* TestBViewController.swift */,
 				A57D4CC8241D05FF001A7129 /* TestCViewController.swift */,
 				A5EED230241B8FB1007A3F55 /* TabBarViewController.swift */,
+				A5E8FC51243088F500AF18B7 /* TestEViewController.swift */,
 				A52ECC4B2429F76100E249ED /* Router */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -255,8 +263,9 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = P499A35898;
+						DevelopmentTeam = GFXRP5WJJ6;
 						LastSwiftMigration = 1130;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -381,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A57D4CC9241D05FF001A7129 /* TestCViewController.swift in Sources */,
+				A5E8FC52243088F500AF18B7 /* TestEViewController.swift in Sources */,
 				A5EED229241B7ECD007A3F55 /* ModuleB.swift in Sources */,
 				A5EED233241B9C36007A3F55 /* ModuleC.swift in Sources */,
 				A5EED227241B701C007A3F55 /* AppDelegate.swift in Sources */,
@@ -389,6 +399,7 @@
 				A52ECC4D2429F78700E249ED /* ModuleD.swift in Sources */,
 				A52ECC512429F88E00E249ED /* WebViewController.swift in Sources */,
 				A57D4CC7241CF716001A7129 /* TestBViewController.swift in Sources */,
+				A5E8FC1D243068BE00AF18B7 /* ModuleE.swift in Sources */,
 				A50C86CE242CAD2300DC1AC2 /* PresentModelViewController.swift in Sources */,
 				A52ECC4F2429F82D00E249ED /* TestDViewController.swift in Sources */,
 				A5EED231241B8FB1007A3F55 /* TabBarViewController.swift in Sources */,
@@ -539,13 +550,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = P499A35898;
+				CODE_SIGN_ENTITLEMENTS = LZSwiftAppDelegateKit_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GFXRP5WJJ6;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "moon.com.LZSwiftAppDelegateKit-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingyebook.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -560,13 +575,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = P499A35898;
+				CODE_SIGN_ENTITLEMENTS = LZSwiftAppDelegateKit_Example.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GFXRP5WJJ6;
 				INFOPLIST_FILE = LZSwiftAppDelegateKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "moon.com.LZSwiftAppDelegateKit-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingyebook.www;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LZSwiftAppDelegateKit/LZSwiftAppDelegateKit_Example-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "LZSwiftAppDelegateKit-Swift.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;

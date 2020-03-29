@@ -22,7 +22,8 @@ class AppDelegate: LZAppDelegate {
             ModuleA(),
             ModuleB(),
             ModuleC(),
-            ModuleD()
+            ModuleD(),
+            ModuleE()
         ])
 
         return super.application(application, willFinishLaunchingWithOptions: launchOptions)

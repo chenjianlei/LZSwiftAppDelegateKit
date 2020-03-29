@@ -14,19 +14,34 @@ import LZSwiftDelegate
 
 let scheme = "zzscs://"
 
-let demo1: String = "\(scheme)testd"
-let demo2: String = "\(scheme)web?p=https://www.48.cn"
-let demo3: String = "\(scheme)alert?title=提示&message=人"
-let demo4: String = "\(scheme)handle"
-let demo5: String = "\(scheme)delegate" // 代理必须延迟执行
-let demo6: String = "\(scheme)isLogin"
-let demo7: String = "\(scheme)overFullScreen"
+let demo1: String = "\(scheme)testd?animated=push"
+let demo2: String = "\(scheme)web?p=https://www.48.cn&animated=present"
+let demo3: String = "\(scheme)alert?title=提示&message=人&animated=open"
+let demo4: String = "\(scheme)handle?animated=open"
+let demo5: String = "\(scheme)delegate?animated=open" // 代理必须延迟执行
+let demo6: String = "\(scheme)isLogin&animated=present"
+let demo7: String = "\(scheme)overFullScreen?animated=present"
+let demo8: String = "\(scheme)present?animated=present"
 
 var isLogin: Bool = false
 
 public enum Animated {
     case push
     case present
+    case open
+}
+
+extension Animated {
+    var value: String {
+        switch self {
+        case .present:
+            return "present"
+        case .open:
+            return "open"
+        case .push:
+            return "push"
+        }
+    }
 }
 
 public enum AnimaterTimer {
@@ -35,6 +50,7 @@ public enum AnimaterTimer {
     case delegate
     case overFullScreen
 }
+
 
 extension AnimaterTimer {
     var timer: DispatchTime {
@@ -68,6 +84,7 @@ class ModuleD: LZBaseModule {
         navigator.register(demo1) { (url, values, context) -> UIViewController? in
             return TestDViewController()
         }
+        
         navigator.register(demo2, ModuleD.webViewControllerFactory)
         navigator.handle(demo3, ModuleD.alert())
         navigator.handle(demo4) { (url, values, context) -> Bool in
@@ -107,6 +124,10 @@ class ModuleD: LZBaseModule {
             }
         }
         
+        navigator.register(demo8) { (url, values, context) -> UIViewController? in
+            return TestEViewController()
+        }
+        
         return true
     }
         
@@ -122,6 +143,8 @@ class ModuleD: LZBaseModule {
                         navigator.push(url)
                     case .present:
                         navigator.present(url)
+                    case .open:
+                        navigator.open(url)
                     }
                 }
             }
