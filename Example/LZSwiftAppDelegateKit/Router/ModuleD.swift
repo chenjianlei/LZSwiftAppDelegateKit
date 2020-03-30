@@ -105,7 +105,7 @@ class ModuleD: LZBaseModule {
         }
         
         navigator.register(demo6) { [weak self] (url, value, context) -> UIViewController? in
-            if let login = self?.makeLogin(url, target: .push, wait: .push) {
+            if let login = self?.makeLogin(url, wait: .push) {
                 navigator.present(login)
                 return nil
             } else {
@@ -114,7 +114,7 @@ class ModuleD: LZBaseModule {
         }
         
         navigator.register(demo7) { [weak self] (url, values, context) -> UIViewController? in
-            if let login = self?.makeLogin(url, target: .present, wait: .overFullScreen) {
+            if let login = self?.makeLogin(url, wait: .overFullScreen) {
                 navigator.present(login)
                 return nil
             } else {
@@ -131,20 +131,24 @@ class ModuleD: LZBaseModule {
         return true
     }
         
-    func makeLogin(_ url: URLConvertible, target animated: Animated, wait: AnimaterTimer) -> UIViewController? {
+    func makeLogin(_ url: URLConvertible, wait: AnimaterTimer) -> UIViewController? {
         if isLogin {
             return nil
         } else {
             let login = WebViewController()
             login.delegate.delegate(on: self) { (_, _) in
                 DispatchQueue.main.asyncAfter(deadline: wait.timer) {
-                    switch animated {
-                    case .push:
+                    let animated = url.queryParameters["animated"]
+                    if animated == nil || animated == "" || animated?.count == 0{
                         navigator.push(url)
-                    case .present:
-                        navigator.present(url)
-                    case .open:
-                        navigator.open(url)
+                    } else {
+                        if animated == Animated.push.value {
+                            navigator.push(url)
+                        } else if animated == Animated.present.value {
+                            navigator.present(url)
+                        } else if animated == Animated.open.value {
+                            navigator.open(url)
+                        }
                     }
                 }
             }
